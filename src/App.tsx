@@ -1,14 +1,17 @@
 import { FC } from 'react';
-
 import './style.css';
+import Header from './components/Header';
+import Projects from './components/Projects';
+import Bio from './components/Bio';
 
-
-
-export const App: FC<{ name: string }> = ({ name }) => {
+function App() {
   return (
-    <div>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen in this world :)</p>
+    <div className="App">
+      <Header />
+      <Projects />
+      <Bio />
     </div>
   );
-};
+}
+
+export default App;
